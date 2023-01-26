@@ -1,0 +1,126 @@
+@use "./reset";
+@use "./colors";
+
+html {
+	font-size: 62.5%; // 10px
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+}
+
+.first-color {
+	color: colors.$first-color;
+}
+
+section[id] {
+	scroll-margin-top: 69px;
+}
+
+// NAWIGACJA - START
+
+.navbar-brand {
+	font-size: 2.2rem;
+	text-transform: uppercase;
+}
+
+.nav-link {
+	text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.navbar-toggler {
+	padding: 0.5em 1em;
+}
+
+// NAWIGACJA - STOP
+
+// POWITANIE - START
+
+.home {
+	height: 60rem;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/buildings.jpg);
+	background-position-y: -50px;
+	background-size: cover;
+	.welcome-text {
+		font-size: 2.2rem;
+	}
+	.btn {
+		padding: 1em 2em;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+}
+
+// POWITANIE - STOP
+
+// O NAS - START
+
+.aboutus-box {
+	h3 {
+		font-size: 2.4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+}
+
+.aboutus-icon {
+	font-size: 4rem;
+}
+
+.accordion-button {
+	padding: 1em;
+	font-size: 1.8rem;
+}
+
+.accordion-button:not(.collapsed) {
+	color: rgb(233, 106, 22);
+	background-color: rgb(248, 248, 248);
+}
+
+// O NAS - STOP
+
+// TEAM - START
+
+.team {
+	background-color: rgb(248, 248, 248);
+}
+
+.team {
+	.card-img-top {
+		height: 300px;
+		object-fit: cover;
+	}
+	.card-title {
+		font-size: 2rem;
+	}
+}
+
+// TEAM - STOP
+
+// KONTAKT - START
+
+.contact {
+	textarea,
+	input[type="text"] {
+		width: 100%;
+		font-size: 1.6rem;
+		padding: 0.6em;
+	}
+	h3 {
+		font-size: 2rem;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.submit-btn {
+		font-size: 1.6rem;
+	}
+}
+
+// KONTAKT - STOP
